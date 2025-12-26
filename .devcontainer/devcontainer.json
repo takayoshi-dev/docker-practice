@@ -1,6 +1,16 @@
 {
 	"name": "Node.js & TypeScript",
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+	"build": {
+		"dockerfile":"../Dockerfile"
+	},
 	"remoteUser": "root",
-	"updateRemoteUserUID": true
+	"updateRemoteUserUID": true,
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
 }
