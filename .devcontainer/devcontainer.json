@@ -16,5 +16,13 @@
 				"esbenp.prettier-vscode"
 			]
 		}
+	},
+	"runArgs": [
+  		"--memory=4g",
+  		"--cpus=2.0"
+	],
+	"hostRequirements": {
+  		"memory": "4gb",
+  		"cpus": 2
 	}
 }
