@@ -5,6 +5,8 @@ RUN apk add --no-cache \
     bash \
     libc6-compat \
     libstdc++ \ 
-    git
+    git \
+    ca-certificates \
+    curl
 
 WORKDIR /workspaces/app
