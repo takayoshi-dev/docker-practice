@@ -4,7 +4,7 @@ USER root
 RUN apk add --no-cache \
     bash \
     libc6-compat \
-    libstdc++ \ 
+    libstdc++ \
     git \
     ca-certificates \
     curl
