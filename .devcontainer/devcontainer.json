@@ -6,8 +6,8 @@
   "mounts": [
     "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
   ],
-  "postCreateCommand": "npm install && chown -R node:node node_modules",
-  "remoteUser": "root",
+  "postCreateCommand": "npm install",
+  "remoteUser": "node",
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
