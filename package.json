@@ -6,6 +6,7 @@
   "scripts": {
     "fix-format": "prettier --write . && eslint --fix .",
     "type-check": "tsc",
+    "unit-test": "vitest run",
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview"
@@ -16,10 +17,12 @@
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "jsdom": "^27.4.0",
     "prettier": "^3.7.4",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.50.1",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vitest": "^4.0.16"
   },
   "dependencies": {
     "pixi.js": "^8.14.3"
