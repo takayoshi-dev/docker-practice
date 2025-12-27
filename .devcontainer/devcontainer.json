@@ -1,28 +1,22 @@
 {
-	"name": "Node.js & TypeScript",
-	"build": {
-		"dockerfile":"../Dockerfile"
-	},
-	"mounts": [
-		"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
-	],
-	"postCreateCommand": "npm install && chown -R node:node node_modules",
-	"remoteUser": "root",
-	"updateRemoteUserUID": true,
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"dbaeumer.vscode-eslint",
-				"esbenp.prettier-vscode"
-			]
-		}
-	},
-	"runArgs": [
-  		"--memory=4g",
-  		"--cpus=2.0"
-	],
-	"hostRequirements": {
-  		"memory": "4gb",
-  		"cpus": 2
-	}
+  "name": "Node.js & TypeScript",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+  "postCreateCommand": "npm install && chown -R node:node node_modules",
+  "remoteUser": "root",
+  "updateRemoteUserUID": true,
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
+  "runArgs": ["--memory=4g", "--cpus=2.0"],
+  "hostRequirements": {
+    "memory": "4gb",
+    "cpus": 2
+  }
 }

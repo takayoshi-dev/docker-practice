@@ -9,4 +9,5 @@ RUN apk add --no-cache \
     ca-certificates \
     curl
 
-WORKDIR /workspaces/app
+WORKDIR /workspaces/docker-practice
+
